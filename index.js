@@ -1,4 +1,4 @@
-// This is a change
+// This is also a change
 import chalk from "chalk"
 
 const myUnusedVariable = 'I am useless'
