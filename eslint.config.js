@@ -4,6 +4,10 @@ import pluginJs from '@eslint/js'
 
 export default [
   {
+    rules: {
+      eqeqeq: ['error', 'always'],
+      'prefer-const': 'error',
+    },
     languageOptions: {
       globals: {
         ...globals.browser
