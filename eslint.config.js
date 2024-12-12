@@ -4,25 +4,15 @@ import pluginJs from '@eslint/js'
 
 export default [
   {
-    rules:
-      {
-        eqeqeq:
-          [
-            'error',
-            'always',
-          ],
-        'prefer-const':
-          'error',
+    rules: {
+      eqeqeq: ['error', 'always'],
+      'prefer-const': 'error',
+    },
+    languageOptions: {
+      globals: {
+        ...globals.browser
       },
-    languageOptions:
-      {
-        globals:
-          {
-            ...globals.browser,
-          },
-      },
+    },
   },
-  pluginJs
-    .configs
-    .recommended,
+  pluginJs.configs.recommended,
 ]
